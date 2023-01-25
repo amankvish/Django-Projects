@@ -1,0 +1,355 @@
+{% extends 'base.html' %}
+
+{% block title %} About {% endblock title %}
+
+{% block body %}
+
+<style>
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+    }
+
+    html {
+        box-sizing: border-box;
+    }
+
+    *,
+    *:before,
+    *:after {
+        box-sizing: inherit;
+    }
+
+    .column {
+        float: left;
+        width: 33.3%;
+        margin-bottom: 16px;
+        padding: 0 8px;
+    }
+
+    .card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        margin: 8px;
+    }
+
+    .about-section {
+        padding: 50px;
+        text-align: center;
+        background-color: #474e5d;
+        color: white;
+    }
+
+    .container {
+        padding: 0 16px;
+    }
+
+    .container::after,
+    .row::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+    .title {
+        color: grey;
+    }
+
+    .button {
+        border: none;
+        outline: 0;
+        display: inline-block;
+        padding: 8px;
+        color: white;
+        background-color: #000;
+        text-align: center;
+        cursor: pointer;
+        width: 100%;
+    }
+
+    .button:hover {
+        background-color: #555;
+    }
+
+    @media screen and (max-width: 650px) {
+        .column {
+            width: 100%;
+            display: block;
+        }
+    }
+</style>
+
+<!-- content2 -->
+<main>
+    <section class="py-5 text-center container">
+        <div class="row py-lg-5">
+            <div class="col-lg-6 col-md-8 mx-auto">
+                <h1 class="fw-light">Car's Album</h1>
+                <p class="lead text-muted">
+                    An Internet search for car generations will lead you to articles
+                    about why millennials don’t care about cars or how to market your
+                    vehicle.
+                </p>
+                <p>
+                    <a href="#" class="btn btn-primary my-2">Main call to action</a>
+                    <a href="#" class="btn btn-secondary my-2">Secondary action</a>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- blog -->
+
+    <div class="album py-5 bg-light">
+        <div class="container">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
+                            xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail"
+                            preserveAspectRatio="xMidYMid slice" focusable="false">
+                            <title>Placeholder</title>
+                            <rect width="100%" height="100%" fill="#55595c"></rect>
+                            <text x="50%" y="50%" fill="#eceeef" dy=".3em">
+                                Thumbnail
+                            </text>
+                        </svg>
+
+                        <div class="card-body">
+                            <p class="card-text">
+                                TopSpeed offers comprehensive automotive information and all
+                                topics and arranged in specific categories. You can search
+                                for topics related to a specific country, model, auto show
+                                and more..
+                            </p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">
+                                        View
+                                    </button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">
+                                        Edit
+                                    </button>
+                                </div>
+                                <!-- <small class="text-muted">9 mins</small> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
+                            xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail"
+                            preserveAspectRatio="xMidYMid slice" focusable="false">
+                            <title>Placeholder</title>
+                            <rect width="100%" height="100%" fill="#55595c"></rect>
+                            <text x="50%" y="50%" fill="#eceeef" dy=".3em">
+                                Thumbnail
+                            </text>
+                        </svg>
+
+                        <div class="card-body">
+                            <p class="card-text">
+                                Good Car Bad Car specializes in tracking car sales and has a
+                                special section where users can check car sales by segment.
+                                In addition, the blog also contains information on the
+                                best-selling vehicles
+                            </p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">
+                                        View
+                                    </button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">
+                                        Edit
+                                    </button>
+                                </div>
+                                <!-- <small class="text-muted">9 mins</small> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
+                            xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail"
+                            preserveAspectRatio="xMidYMid slice" focusable="false">
+                            <title>Placeholder</title>
+                            <rect width="100%" height="100%" fill="#55595c"></rect>
+                            <text x="50%" y="50%" fill="#eceeef" dy=".3em">
+                                Thumbnail
+                            </text>
+                        </svg>
+
+                        <div class="card-body">
+                            <p class="card-text">
+                                The Torque Report contains all the information about news
+                                from the car industry, car premieres, car shows, prototype
+                                spy shots, concept cars, and also eco-cars.
+                            </p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">
+                                        View
+                                    </button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">
+                                        Edit
+                                    </button>
+                                </div>
+                                <!-- <small class="text-muted">9 mins</small> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
+                            xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail"
+                            preserveAspectRatio="xMidYMid slice" focusable="false">
+                            <title>Placeholder</title>
+                            <rect width="100%" height="100%" fill="#55595c"></rect>
+                            <text x="50%" y="50%" fill="#eceeef" dy=".3em">
+                                Thumbnail
+                            </text>
+                        </svg>
+
+                        <div class="card-body">
+                            <p class="card-text">
+                                Popular Mechanics is known for the exchange of informative
+                                articles about the automotive industry, technology, science,
+                                and aerospace.
+                            </p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">
+                                        View
+                                    </button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">
+                                        Edit
+                                    </button>
+                                </div>
+                                <!-- <small class="text-muted">9 mins</small> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
+                            xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: The Safe Driver"
+                            preserveAspectRatio="xMidYMid slice" focusable="false">
+                            <title>Placeholder</title>
+                            <rect width="100%" height="100%" fill="#55595c"></rect>
+                            <text x="50%" y="50%" fill="#eceeef" dy=".3em">
+                                Thumbnail
+                            </text>
+                        </svg>
+
+                        <div class="card-body">
+                            <p class="card-text">
+                                While most automotive blogs focus on car reviews, buying
+                                guides, and industry news, The Safe Driver is an informative
+                                blog designed to educate readers
+                            </p>
+
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">
+                                        View
+                                    </button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">
+                                        Edit
+                                    </button>
+                                </div>
+                                <!-- <small class="text-muted">9 mins</small> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
+                            xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail"
+                            preserveAspectRatio="xMidYMid slice" focusable="false">
+                            <title>Placeholder</title>
+                            <rect width="100%" height="100%" fill="#55595c"></rect>
+                            <text x="50%" y="50%" fill="#eceeef" dy=".3em">
+                                Thumbnail
+                            </text>
+                        </svg>
+
+                        <div class="card-body">
+                            <p class="card-text">
+                                The Car Connection is a leading automotive blog that
+                                contains all the latest news and updates about the industry.
+                            </p>
+
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">
+                                        View
+                                    </button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">
+                                        Edit
+                                    </button>
+                                </div>
+                                <!-- <small class="text-muted">9 mins</small> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<!-- About Us -->
+<div class="about-section">
+    <h1>About Us</h1>
+    <p>Some text about who we are and what we do.</p>
+    <p>
+        <!-- Resize the browser window to see that this page is responsive by the way. -->
+    </p>
+</div>
+
+<h2 style="text-align: center">Our Team</h2>
+<div class="row">
+    <div class="column">
+        <div class="card">
+            <img src="../static/img/biru 2.jpg" height="400" width="180" alt="Jane" style="width: 100%" />
+            <div class="container">
+                <center>
+                    <h2>Adhera</h2>
+                    <p class="title">CEO & Founder</p>
+                </center>
+            </div>
+        </div>
+    </div>
+
+    <div class="column">
+        <div class="card">
+            <img src="../static/img/biru 3.jpg" height="400" width="180 " alt="Mike" style="width: 100%" />
+            <div class="container">
+                <center>
+                    <h2>KGF</h2>
+                    <p class="title">Art Director</p>
+                </center>
+            </div>
+        </div>
+    </div>
+
+    <div class="column">
+        <div class="card">
+            <img src="../static/img/biru.jpg" height="400" width="180" alt="John" style="width: 100%" />
+            <div class="container">
+                <center>
+                    <h2>Rocky</h2>
+                    <p class="title">Designer</p>
+                </center>
+            </div>
+        </div>
+    </div>
+</div>
+
+<hr />
+
+{% endblock body%}
